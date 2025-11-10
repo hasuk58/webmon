@@ -1,0 +1,4 @@
+url = https://www.mysite.com
+timeout = 10
+slow_threshold = 3
+note = My personal website
