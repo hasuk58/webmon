@@ -42,13 +42,19 @@ python3 website_monitor.py
 
 📂 Directory Structure
 JM_Labs_Website_Monitor/
-├── website_monitor.py      # Main program file
-├── setting.ini             # Configuration (auto-generated on first run)
-└── target_sites/           # Folder containing individual site configs
-    ├── site1.txt
-    ├── site2.txt
-    └── ...
 
+├── website_monitor.py      # Main program file
+
+├── setting.ini             # Configuration (auto-generated on first run)
+
+└── target_sites/           # Folder containing individual site configs
+
+    ├── site1.txt
+    
+    ├── site2.txt
+    
+    └── ...
+    
 🚧 In Development
 
  - Option to toggle SSL verification ON/OFF
