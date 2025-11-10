@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# JM Labs Website Monitor (사이트별 설정 반영 버전)
 import requests
 import time
 import concurrent.futures
@@ -277,3 +276,4 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         print("\n🛑 프로그램 종료됨.")
+
