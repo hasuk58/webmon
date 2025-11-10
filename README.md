@@ -14,20 +14,23 @@ Features
 Create a .txt file for each website you want to monitor.
 The filename can be anything you like.
 
+```
 Example: target_sites/site.txt
 
 url = https://www.mysite.com
 timeout = 10
 slow_threshold = 3
 note = My personal website
-
+```
 Key	Description
-url	Target site URL
-timeout	Request timeout (seconds)
-slow_threshold	Threshold for slow response warnings (seconds)
-note	A short note shown in Telegram alerts
+url	: Target site URL
+timeout :	Request timeout (seconds)
+slow_threshold	: Threshold for slow response warnings (seconds)
+note	: A short note shown in Telegram alerts
 
+```
 ⚙️ [setting.ini] (Configuration File)
+
 [General]
 concurrent_limit = 5     ; Number of sites to check simultaneously
 interval = 2             ; Delay (seconds) between each batch
@@ -36,27 +39,26 @@ cooldown = 5             ; Wait time (seconds) after full cycle
 [Telegram]
 bot_token = 123456789:ABCDEF1234567890abcdef
 chat_id = 987654321
+```
 
+```
 ▶️ How to Run
 python3 website_monitor.py
-
+```
+```
 📂 Directory Structure
-JM_Labs_Website_Monitor/
-
+webmon/
 ├── website_monitor.py      # Main program file
-
 ├── setting.ini             # Configuration (auto-generated on first run)
-
 └── target_sites/           # Folder containing individual site configs
-
     ├── site1.txt
-    
     ├── site2.txt
-    
     └── ...
-    
+```
+```
 🚧 In Development
 
  - Option to toggle SSL verification ON/OFF
  - Additional alert APIs (KakaoTalk, Email, etc.)
  - Defacing detection feature
+```
